@@ -9,7 +9,7 @@ function AdminLogin({ onLogin }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://personal-portfolio-cms-266w.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {

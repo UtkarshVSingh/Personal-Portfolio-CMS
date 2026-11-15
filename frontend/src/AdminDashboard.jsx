@@ -11,7 +11,7 @@ function AdminDashboard({ onLogout }) {
   const fetchBlogs = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/blogs"
+        "https://personal-portfolio-cms-266w.onrender.com/api/blogs"
       );
 
       const data = await response.json();
@@ -35,7 +35,7 @@ function AdminDashboard({ onLogout }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/blogs/${id}`,
+        `https://personal-portfolio-cms-266w.onrender.com/api/blogs/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -68,7 +68,7 @@ function AdminDashboard({ onLogout }) {
   const updateBlog = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/blogs/${editingBlog._id}`,
+        `https://personal-portfolio-cms-266w.onrender.com/api/blogs/${editingBlog._id}`,
         {
           method: "PUT",
           headers: {

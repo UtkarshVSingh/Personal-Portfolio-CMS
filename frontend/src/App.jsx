@@ -36,7 +36,7 @@ function App() {
 
   // Fetch blogs
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs")
+    fetch("https://personal-portfolio-cms-266w.onrender.com/api/blogs")
       .then((response) => response.json())
       .then((data) => setBlogs(data))
       .catch((error) =>

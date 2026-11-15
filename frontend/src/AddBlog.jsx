@@ -23,7 +23,7 @@ function AddBlog({ onBlogAdded }) {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/blogs",
+        "https://personal-portfolio-cms-266w.onrender.com/api/blogs",
         {
           method: "POST",
           headers: {
